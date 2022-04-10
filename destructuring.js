@@ -5,7 +5,6 @@ const numbers = [42, 65];
 
 // const [x, y] = [42, 65]
 
-
 const [x, y] = numbers;
 
 function boxify(num1, num2) {
@@ -49,5 +48,5 @@ const employee = {
 }
 
 const { machine, ide } = employee;
-// const { weight, address } = employee.specification;
+const { weight, address } = employee.specification;
 const { brand } = employee?.specification?.watch;

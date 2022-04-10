@@ -6,29 +6,27 @@ const products = [
     { name: 'camera', price: 9000, brand: 'canon', color: 'gray' }
 ];
 
+// 1. map to return an array  
 const brands = products.map(product => product.brand);
-// console.log(brands);
+console.log(brands);
 const prices = products.map(product => product.price);
-// console.log(prices);
+console.log(prices);
 
-// products.forEach(product => console.log(product))
-// products.forEach(product => console.log(product.color))
+// 2. forEach nathing to return
+products.forEach(product => console.log(product))
+products.forEach(product => console.log(product.color))
 
 products.forEach(product => {
 
 })
 
-
-// 3. filter
+// 3. filter to return an array with condition
 const cheap = products.filter(product => product.price <= 5000);
-// console.log(cheap);
+console.log(cheap);
 
 const specificName = products.filter(p => p.name.includes('n'));
-// console.log(specificName);
+console.log(specificName);
 
-
-//4. find
+//4. find to return an object with condition
 const special = products.find(p => p.name.includes('n'));
 console.log(special);
-
-
